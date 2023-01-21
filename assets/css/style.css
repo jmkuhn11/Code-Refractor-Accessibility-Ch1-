@@ -7,7 +7,9 @@
 body {
     background-color: #d9dcd6;
 }
+/* For entire css document, reordered elements so they followed sequential order of html code.
 
+Changed div to "header" to make semantic. Then changed header "class" to "tag" for subsequent css elements.*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,6 +17,7 @@ header {
     color: #ffffff;
 }
 
+/* Removed header description for "h1" as it is the only "h1" in code.*/
 h1 {
     display: inline-block;
     font-size: 48px;
@@ -24,6 +27,7 @@ h1 .seo {
     color: #d9dcd6;
 }
 
+/* Changed div to "nav" to make semantic.*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -46,6 +50,7 @@ a {
     text-decoration: none;
 }
 
+/* Changed div and hero class to "figure" tag to make semantic, as this portion of the website is only an image.*/
 figure {
     height: 800px;
     width: 100%;
@@ -55,12 +60,16 @@ figure {
     background-position: center;
 }
 
+/* Removed all following classes except "float-left" and "float-right", as the rest could be condensed and simplified through use of tags.
+
+Changed div to "Section" tag to make Semantic. This sets up following classes to use "Section" as a selctor tag.*/
 section {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Condensed classes "search-engine-optimization", "online-reputation-management", and "social-media-marketing" to just use "section" tag (one also uses "div"), as they all had the same properties.*/
 section div {
     margin-bottom: 20px;
     padding: 50px;
@@ -79,6 +88,7 @@ section h2 {
     font-size: 36px;
 }
 
+/* Kept "floater" tags as they are needed to determine whether an image floats left or right. Debated about deleting "Section img" and moving the max-height to both classes. However, I kept them the same because I like how the "floater" tags only refers to the images floating property.*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -93,6 +103,7 @@ p {
     font-size: 16px;
 }
 
+/* Changed div and benefits class to "aside" tag to make Semantic.*/
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -104,11 +115,13 @@ aside {
     background-color: #2589bd;
 }
 
+/*Condensed all classes starting with the name "benefit" to just use "aside" tag (and one uses "div"), as they all had the same properties.*/
 aside div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Debated changing to just "h3" as no other tag is needed. Decided to keep "aside" as well to make it easy to understand where it is located/formatted.*/
 aside h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -120,6 +133,7 @@ aside img {
     max-width: 150px;
 }
 
+/* Changed div to "footer" tag to make semantic. Then changed  footer "classes" to "tags" for subsequent css elements.*/
 footer {
     padding: 30px;
     clear: both;
